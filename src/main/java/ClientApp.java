@@ -22,7 +22,7 @@ public class ClientApp {
 
             System.out.println("Введите запрос для поиска\n>>");
 
-            String input = scanner.nextLine();
+            String input = scanner.nextLine().toLowerCase();
             // отправляем серверу запрос на поиск
             out.println(input);
             // считываем ответ сервера

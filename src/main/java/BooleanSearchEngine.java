@@ -9,7 +9,7 @@ import java.util.*;
 public class BooleanSearchEngine implements SearchEngine {
 
     // hashmap для хранения проиндексированных данных
-    Map<String, List<PageEntry>> index = new HashMap<>();
+    private final Map<String, List<PageEntry>> index = new HashMap<>();
 
 
     public BooleanSearchEngine(File pdfsDir) throws IOException {
